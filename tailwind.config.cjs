@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 		  fontFamily:{
 			nunito:['Nunito','sans-serif'],
+			poppins:['Poppins','sans-serif'],
 		  },
 		  colors:{
 			'communitybg':'#F5F5F5',
