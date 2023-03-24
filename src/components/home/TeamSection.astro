@@ -1,0 +1,77 @@
+---
+import Ted from '../../images/Ted.jpeg'
+import Mumbi from '../../images/mumbi.jpg'
+import Rukia from '../../images/mumbi.jpg'
+import Dennis from '../../images/Dennis.jpg'
+import Stephen from '../../images/Stephen.png'
+import Michael from '../../images/Michael.jpg'
+import Mark from '../../images/karake.jpeg'
+import Brian from '../../images/Brian.jpg'
+import Bernard from '../../images/bernard.jpeg'
+import { Image } from '@astrojs/image/components'
+import { Icon } from 'astro-icon'
+---
+
+<section class=" bg-slate-10o bg-opacity-70 bg-homeTeamBg bg-cover bg-center bg-no-repeat bg-blend-overlay w-full h-auto  my-10 font-nunito">
+    <div class="text-center py-14">
+        <h2 class="text-purple-500 text-3xl pt-10 font-medium">Meet Our Team</h2>
+        <Icon name="ph:waves" width="20" class='mx-auto text-gray-400'/>
+    </div>
+    <div class="my-2 grid grid-cols-5 gap-20 text-center w-full max-w-screen-xl mx-auto">
+        <div class="rounded-xl bg-white">
+            <Image src={Ted} alt="Ted" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Ted <br/> Muganda</h4>
+            <p class="text-gray-500 text-md">CEO</p>
+        </div>
+        <div class="rounded-xl bg-white">
+            <Image src={Mumbi} alt="Mumbi" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Mumbi<br/>Kariuki</h4>
+            <p class="text-gray-500 text-md">Partnerships Lead</p>
+        </div>
+        <div class="rounded-xl bg-white">
+            <Image src={Stephen} alt="Stephen" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Stephen <br/>Wanyee</h4>
+            <p class="text-gray-500 text-md">Prouct Develper</p>
+        </div>
+        <!-- <div class="rounded-xl bg-white">
+            <Image src={Rukia} alt="Rukia" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Rukia<br/>Rukia</h4>
+            <p class="text-gray-500 text-md">Business Development Lead</p>
+        </div> -->
+        <div class="rounded-xl bg-white">
+            <Image src={Dennis} alt="Dennis" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Dennnis <br/>Lighare</h4>
+            <p class="text-gray-500 text-md">Content Developer</p>
+        </div>
+        <div class="rounded-xl bg-white">
+            <Image src={Michael} alt="Michael" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Michael <br/>Gitonga</h4>
+            <p class="text-gray-500 text-md">Product Developer</p>
+        </div>
+    </div>
+    <hr class="w-3/4 border-2 mx-auto my-4"/>
+    <div class="text-center py-14">
+        <h2 class="text-purple-500 text-3xl pt-10 font-medium">Meet Our Team</h2>
+        <Icon name="ph:waves" width="20" class='mx-auto text-gray-400'/>
+    </div>
+    <div class="my-2 grid grid-cols-3 gap-5 text-center  w-full max-w-screen-xl mx-auto">
+        <div class="rounded-xl bg-white">
+            <Image src={Mark} alt="Mark" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Mark <br/> Karake</h4>
+            <p class="text-gray-500 text-md">Founder, CEO
+                Impact Africa Network</p>
+        </div>
+        <div class="rounded-xl bg-white">
+            <Image src={Brian} alt="Brian" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Brian <br/> Busolo</h4>
+            <p class="text-gray-500 text-md">Program Manager
+                Microsoft</p>
+        </div>
+        <div class="rounded-xl bg-white">
+            <Image src={Bernard} alt="Ted" format='avif' class="object-contain rounded-full h-auto w-28 mx-auto -mt-10"/>
+            <h4 class="text-purple-500 text-lg font-semibold">Mr Bernard <br/> Wandabwa</h4>
+            <p class="text-gray-500 text-md">Deputy Principal
+                Woodcreek School</p>
+        </div>
+    </div>
+</section>

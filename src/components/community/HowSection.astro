@@ -1,0 +1,37 @@
+---
+import dash from "../../images/dash-rounded.svg";
+import content from "../../images/content.svg";
+import resources from "../../images/resources.svg";
+import events from "../../images/events.svg";
+import networking from "../../images/networking.svg";
+import { Image } from "@astrojs/image/components";
+---
+<section class="w-full max-w-screen-xl mx-auto my-20 ">
+    <div class="flex justify-between  my-20 font-nunito">
+        <div><Image src={dash} alt="dash-roundded-image" format='avif'  class="object-contain  h-auto w-24"/></div>
+        <div><h2 class="font-black text-2xl text-purple-700 text-center md:mr-16">How it works</h2></div>
+        <div></div>
+    </div>
+    <div class="grid md:grid-cols-4 sm:grid-cols-1 gap-10  font-nunito text-center">
+        <div class="border border-gray-200 rounded-lg p-4 ">
+            <Image src={content} alt="content-image" format='avif' class="object-cover  h-auto w-4/5 mx-auto"/>
+            <h3 class="font-extrabold text-lg text-purple-800 my-4 ">Entrepreneurship content</h3>
+            <p class="text-gray-700 ">Teachers get access to the kinetic<br/> entrepreneurship framework</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-4 ">
+            <Image src={resources} alt="resource-image" format='avif' class="object-cover  h-auto w-4/5 mx-auto"/>
+            <h3 class="font-extrabold text-lg text-purple-800 my-4 ">Resources</h3>
+            <p class="text-gray-700 ">Sharing of relevant information and news <br/> around entrepreneurship education in the <br/> form of blogs, articles, podcasts,videos</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-4 ">
+            <Image src={events} alt="events-image" format='avif' class="object-cover  h-auto w-4/5 mx-auto"/>
+            <h3 class="font-extrabold text-lg text-purple-800 my-4 ">Events</h3>
+            <p class="text-gray-700 ">We organize events, workshops<br/> fireside chats<br/></p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-4 ">
+            <Image src={networking} alt="networking-image" format='avif' class="object-cover  h-auto w-4/5 mx-auto"/>
+            <h3 class="font-extrabold text-lg text-purple-800 my-4 ">Slack Community</h3>
+            <p class="text-gray-700 ">Get to network , share ideas and explore <br/>opportunities  with like minded teachers</p>
+        </div>
+    </div>
+</section>

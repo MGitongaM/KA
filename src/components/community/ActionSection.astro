@@ -1,0 +1,15 @@
+---
+import rocket from "../../images/Rocket.svg"
+import arrow from "../../images/arrow.svg"
+import AirtableForm from "../AirtableForm";
+import { Image } from "@astrojs/image/components";
+---
+<section class="bg-orange-200 rounded-lg w-full max-w-screen-xl mx-auto my-12 font-nunito">
+    <div class="flex justify-evenly items-center ">
+        <div><Image src={rocket} alt="rocket-image" format='avif' class="object-cantain h-auto w-20 mx-auto"/></div>
+        <div class="">
+            <AirtableForm/>
+        </div>
+        <div><Image src={arrow} alt="arrow-image" format='avif' class="object-cantain h-auto w-20 mx-auto"/></div>
+    </div>
+</section>

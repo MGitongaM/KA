@@ -1,0 +1,29 @@
+---
+import ParentChild from '../../images/parent-child.png'
+import StudentsBulb from '../../images/students-buld.png'
+import StudentLearn from '../../images/student-learn.png'
+import { Image } from '@astrojs/image/components';
+import { Icon } from 'astro-icon';
+---
+<section class="w-screen bg-slate-50 font-nunito">
+    <div class="w-full max-w-screen-xl mx-auto py-10">
+        <div class="text-center my-10">
+            <h2 class="text-purple-500 text-3xl  font-medium">We are dedicated to:</h2>
+            <Icon name="ph:waves" width="20" class='mx-auto text-gray-400'/>
+        </div>
+        <div class="grid grid-cols-3 gap-4 pb-10">
+            <div class="border-2 rounded-xl py-5 px-10">
+                <Image src={ParentChild} alt="parent-and-child" format='avif' class="object-contain w-72 mx-auto"/>
+                <p class="text-center text-gray-500">Developing an entrepreneur mindset</p>
+            </div>
+            <div class="border-2 rounded-xl py-5 px-10">
+                <Image src={StudentsBulb} alt="students-ideas" format='avif' class="object-contain w-80 mx-auto" />
+                <p class="text-center text-gray-500">Developing collaboration skills and team work</p>
+            </div>
+            <div class="border-2 rounded-xl py-5 px-10">
+                <Image src={StudentLearn} alt="student-study" format='avif' class="object-contain w-72 mx-auto" />
+                <p class="text-center text-gray-500">Instilling execution skills through applied learning</p>
+            </div>
+        </div>
+    </div>
+</section>

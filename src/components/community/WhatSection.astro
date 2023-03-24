@@ -1,0 +1,28 @@
+---
+import book from "../../images/book 1.svg";
+import network from "../../images/network 1.svg";
+import creative from "../../images/creative 1.svg";
+import { Image } from "@astrojs/image/components";
+---
+<section class="w-full max-w-screen-xl mx-auto my-20 ">
+    <div class="text-center font-nunito">
+        <h2 class="text-purple-600 font-black text-2xl my-10">What you'll get </h2>
+    </div>
+    <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-4  font-nunito">
+        <div class="border border-gray-400 rounded-lg px-6 py-10 grid place-content-center text-center">
+            <Image src={book} alt="book-image" format='avif' class="object-contain  h-auto w-20 mx-auto" />
+                <p class="font-bold text-gray-900 my-5">An Entrepreneurship Learning Journey</p>
+                <p class="text-gray-800">Access to the the kinetic <br/>entrepreneurship framework</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-6 py-10 grid place-content-center text-center">
+            <Image src={network} alt="network-image" format='avif' class="object-contain  h-auto w-20 mx-auto" />
+                <p class="font-bold text-gray-900 my-5"> Networking and support</p>
+                <p class="text-gray-800"> Peer discussions <br/>Physical meetups</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-6 py-10 grid place-content-center text-center">
+            <Image src={creative} alt="creative-bulb-image" format='avif' class="object-contain  h-auto w-20 mx-auto" />
+                <p class="font-bold text-gray-900 my-5"> Opportunities</p>
+                <p class="text-gray-800"> Career Advancement<br/>Business opportunities</p>
+        </div>
+    </div>
+</section>

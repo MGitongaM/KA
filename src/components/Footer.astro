@@ -1,0 +1,50 @@
+---
+import logo from "../images/Kinetic Logo white.png with tagline.png"
+import { Icon } from "astro-icon"
+import { Image } from "@astrojs/image/components";
+---
+
+<footer class='bg-purple-800 w-full px-10 h-[15rem] py-4 font-nunito'>
+    <div class=" max-w-screen-xl mx-auto">
+        <div class="grid md:grid-cols-4 sm:grid-cols-1 place-items-center ">
+            <di class="grid place-content-center">
+                <Image src={logo} alt="kinetic-logo" class='object-contain h-16' format='avif' /></di>
+            <div class="grid place-content-center">
+                <ul class='text-gray-400'>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+            <div class="grid place-content-center">
+                <ul class='text-gray-400'>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="grid place-content-center">
+               
+                <ul class="text-gray-400">
+                    <li>
+                        <div class="flex items-center gap-1">
+                            <di class='bg-white  rounded-md p-1 m-1'v><Icon name="uil:twitter-alt" width='16'/></di>
+                            <div><p>Twitter</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center gap-1">
+                            <div class='bg-white  rounded-md p-1 m-1'><Icon name="uil:linkedin-alt" width='16'/></div>
+                            <div><p>LinkedIn</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center gap-1">
+                            <di class='bg-white  rounded-md p-1 m-1'v><Icon name="uit:youtube" width='16'/></di>
+                            <div><p>Youtube</p></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </footer>

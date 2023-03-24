@@ -1,0 +1,44 @@
+---
+import KineticVideo from '../../images/kinetic-video.png'
+import KineticDashboard from '../../images/kinetic-dashboard.png'
+import KineticFireside from '../../images/kinetic-fireside.png'
+import { Image } from '@astrojs/image/components';
+import { Icon } from 'astro-icon';
+---
+<section class="w-screen bg-slate-50">
+    <div class="w-full max-w-screen-xl mx-auto px-10 mt-10 font-nunito">
+        <div class="text-center w-1/2 mx-auto my-14">
+            <h2 class="text-purple-500 text-3xl pt-10 font-medium">The Platform</h2>
+            <p class="mb-2 text-gray-400 text-lg">Kinetic for schools ignites an entrepreneurial mindset with unique learning experiences that empower all students to own their futures. The platform offers the following:</p>
+            <Icon name="ph:waves" width="20" class='mx-auto text-gray-400 my-2'/>
+        </div>
+        <div class="grid grid-cols-2 place-items-center gap-6">
+            <div class="">
+                <h3 class="text-orange-400 text-2xl">Curated content for the students</h3>
+                <p class="text-gray-400 text-lg">We have curated entrepreneurship learning content that can be consumed in 12 sessions</p>
+            </div>
+            <div class="">
+               <Image src={KineticVideo} alt="kinetic-video-sample"  format='avif'class="object-contain h-auto w-50"/>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 place-items-center gap-6">
+            <div class="">
+               <Image src={KineticDashboard} alt="kinetic-dashboard-sample"  format='avif'class="object-contain h-auto w-50"/>
+            </div>
+            <div class="">
+                <h3 class="text-orange-400 text-2xl">Be involved in your child's learning journey</h3>
+                <p class="text-gray-400 text-lg">Parents and school representatives can log in and view the progress of the student</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 place-items-center gap-6 pb-10">
+            <div class="">
+                <h3 class="text-orange-400 text-2xl">Students get to learn from global leaders</h3>
+                <p class="text-gray-400 text-lg">Students will have have access to proprietary content of successful entrepreneurs from around the world.</p>
+            </div>
+            <div class="">
+               <Image src={KineticFireside} alt="kinetic-fireisde-sample"  format='avif'class="object-contain h-auto w-50"/>
+            </div>
+        </div>
+    
+    </div>
+</section>

@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/community/HeroSection.astro";
+import WhatSection from "../components/community/WhatSection.astro";
+import HowSection from "../components/community/HowSection.astro";
+import ActionSection from "../components/community/ActionSection.astro";
+---
+
+<Layout title="Kinetic Community">
+    <HeroSection/>
+    <WhatSection/>
+    <HowSection/>
+    <ActionSection/>
+</Layout>
+
+<script>
+        document.querySelector('nav').classList.remove('bg-transparent')
+        document.querySelector('nav').classList.add('bg-purple-800')
+  </script>

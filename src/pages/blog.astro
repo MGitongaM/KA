@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+const posts= await Astro.glob('../content/blogPosts/*md')
+---
+
+<Layout title="Kinetic Blog">
+
+    <section class="w-1/2 mx-auto">
+    
+        {posts.map((post)=>(
+            <div class="rounded-lg border-2 p-2 text-center my-4">
+                <img src={post.frontmatter.image.src} alt="header image" >
+                <h1 class="font-semibold">{post.frontmatter.title}</h1>
+                <p class="my-4">{post.frontmatter.excerpt}</p>
+                <a href={`/${post.frontmatter.slug}`} class="border-b-2 border-purple-500">Read More</a>
+            </div>
+        ))}
+    </section>
+</Layout>
