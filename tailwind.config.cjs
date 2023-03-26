@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	safelist:['text-4xl','text-2xl','text-xl','text-lg','font-bold', 'font-mplus','mb-6', 'mb-2','mb-1','rounded-xl','p-4','object-contain','underline','underline-offset-2','hover:text-purple-500'],
 	theme: {
 		extend: {
 		  fontFamily:{
