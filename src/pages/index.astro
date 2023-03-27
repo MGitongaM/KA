@@ -5,7 +5,9 @@ import DedicatedSection from '../components/home/DedicatedSection.astro';
 import ActivitiesSection from '../components/home/ActivitiesSection.astro';
 import PlatformSection from '../components/home/PlatformSection.astro';
 import TeamSection from '../components/home/TeamSection.astro';
-import ReachOutSection from '../components/home/ReachOutSection.astro';
+import ReachOutSection from '../components/home/ReachOutSection';
+// import ReachOutSection from '../components/home/ReachOutSection.astro';
+
 ---
 
 <Layout title="Kinetic-Community.">
@@ -14,7 +16,8 @@ import ReachOutSection from '../components/home/ReachOutSection.astro';
 	<ActivitiesSection/>
 	<PlatformSection/>
 	<TeamSection/>
-	<ReachOutSection/>
+	<ReachOutSection client:visible/>
+	<!-- <ReachOutSection/> -->
 </Layout>
 
 

@@ -1,13 +1,15 @@
 ---
 import { Image } from '@astrojs/image/components';
 import heroBg from '../../images/Hero-Community-Bg.png';
-import AirtableForm from '../AirtableForm';
+import FormAirtable from '../../components/FormAirtable';
+import CommunityVideo from '../CommunityVideo';
 ---
 
 <section class="bg-herobg w-full max-w-screen-xl mx-auto rounded-xl border p-4 grid md:grid-cols-12 sm:grid-cols-1 font-nunito mt-24">
     <div class="col-span-4 pl-10 place-self-center">
-        <h1 class="font-extrablod  text-purple-600 text-4xl leading-10 mb-5">An online community <br/> for entrepreneurial <br/> minded teachers<br/> to newtork, learn and share. </h1>
-        <AirtableForm/>
+        <h1 class="font-extrablod  text-purple-600 text-4xl font-semibold leading-10 mb-5">An online community <br/> for entrepreneurial <br/> minded teachers<br/> to newtork, learn and share. </h1>
+        <FormAirtable client:visible/>
+        <CommunityVideo client:visible/>
     </div>
     <div class="col-span-8">
         <Image src={heroBg}alt="hero-section-image" format='avif' class="object-cover h-auto w-full" />
